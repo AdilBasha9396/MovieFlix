@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Movies Added Successfully</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #4facfe, #00f2fe);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 1.5em;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        background: #ff7b54;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    input[type="submit"]:hover {
+        background: #ff5722;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Movie added successfully.</h1>
+        <h2>Do you want to add another movie?</h2>
+        <form action="map-addmovie">
+            <input type="submit" value="Add Movie">
+        </form>
+    </div>
+      <div style="text-align: center; margin-top: 30px; margin-bottom: 40px">
+    <a href="logout">
+        <input type="submit" value="Logout" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+    </a>
+</div>
+</body>
+</html>

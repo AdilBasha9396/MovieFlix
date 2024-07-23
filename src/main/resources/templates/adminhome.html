@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Page</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        width: 300px;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+        font-size: 2em;
+    }
+
+    form, a {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        background: #ff7b54;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        font-weight: bold;
+        font-size: 1em;
+        width: 100%;
+    }
+
+    input[type="submit"]:hover {
+        background: #ff5722;
+    }
+
+    a {
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome Admin</h1>
+
+        <form action="viewuser">
+            <input type="submit" value="View User">
+        </form>
+        
+        <form action="map-addmovie">
+            <input type="submit" value="Add Movie">
+        </form>
+
+        <a href="viewmovie">
+            <input type="submit" value="View Movie">
+        </a>
+
+
+        
+        <a href="update-profile"><input type="submit" value="Update Profile"></a>
+
+        <a href="map-deleteuser">
+            <input type="submit" value="Delete User">
+        </a>
+    </div>
+</body>
+</html>
