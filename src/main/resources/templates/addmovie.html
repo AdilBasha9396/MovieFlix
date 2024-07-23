@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Add Movies</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            width: 300px;
+            text-align: center;
+        }
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color:black ;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            background: #ff758c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: #ff5a70;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Add Movie</h3>
+        <form action="addmovie" method="post">
+            <label for="movieName">Movie Name</label>
+            <input type="text" id="movieName" name="movieName">
+            
+            <label for="movieLink">Movie Link</label>
+            <input type="text" id="movieLink" name="movieLink">
+            
+            <label for="movieGenre">Movie Genre</label>
+            <select id="movieGenre" name="movieGenre">
+            
+                <option value="SciFi">SciFi</option>
+                <option value="Horror">Horror</option>
+                <option value="Romance">Romance</option>
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+            </select>
+            
+            <label for="movieCast">Movie Cast</label>
+            <input type="text" id="movieCast" name="movieCast">
+            
+            <label for="director">Movie Director</label>
+            <input type="text" id="director" name="director">
+            
+            <input type="submit" value="Add Movie">
+        </form>
+    </div>
+</body>
+</html>

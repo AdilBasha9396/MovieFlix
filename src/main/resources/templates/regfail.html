@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Reg Fail</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100%;
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+    }
+
+    .container {
+        text-align: center;
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 90%;
+    }
+
+    .container h1 {
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        color: #ff4d4d;
+    }
+
+    .btn {
+        background-color: #ff7e5f;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 25px;
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        display: inline-block;
+    }
+
+    .btn:hover {
+        background-color: #feb47b;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            padding: 30px;
+        }
+
+        .container h1 {
+            font-size: 1.5em;
+        }
+
+        .btn {
+            font-size: 0.9em;
+            padding: 8px 20px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Register fail. Try again.</h1>
+    <a href="map-register" class="btn">Register</a>
+</div>
+</body>
+</html>

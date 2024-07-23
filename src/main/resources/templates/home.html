@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Home</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #1f4037, #99f2c8);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        width: 80%;
+        max-width: 600px;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+        font-size: 2.5em;
+    }
+
+    p, span {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .button-container {
+        margin-top: 30px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    input[type="submit"] {
+        padding: 15px 25px;
+        background: #ff7b54;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        font-weight: bold;
+        font-size: 1em;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    input[type="submit"]:hover {
+        background: #ff5722;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to MovieFlix</h1>
+        <p>MovieFlix is an online streaming platform offering a variety of movies and TV shows.</p> 
+
+        <span>Here are some key features and aspects of MovieFlix:</span>
+
+        <span>Wide Range of Content: MovieFlix provides access to a vast library of movies and TV series across different genres, including action, drama, comedy, horror, and documentaries.</span>
+
+        <p>User-Friendly Interface: The platform is designed with an intuitive interface that allows users to easily browse and search for their favorite content.</p>
+
+        <div class="button-container">
+            <a href="exploremovies"><input type="submit" value="Explore Movies"></a>
+            <a href="user-update-profile"><input type="submit" value="Update Profile"></a>
+            <a href="logout"><input type="submit" value="Logout"></a>
+        </div>
+    </div>
+</body>
+</html>
